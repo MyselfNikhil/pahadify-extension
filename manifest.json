@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Pahadify Image Converter",
+  "version": "1.0",
+  "description": "Convert WebP and other images to JPG & PNG directly from the right-click menu.",
+  "homepage_url": "https://thepahadify.com/",
+  "icons": {
+    "192": "icon-192.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Pahadify Utilities"
+  },
+  "permissions": [
+    "contextMenus",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
